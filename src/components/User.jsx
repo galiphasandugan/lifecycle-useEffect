@@ -16,7 +16,13 @@ const User = () => {
   };
 
 useEffect(() => {
+const timer = setInterval(getUser,3000)
   getUser()
+
+return(
+    clearInterval(timer)
+)
+
 }, [])
 
 
